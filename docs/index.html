@@ -13,7 +13,49 @@
     </head>
     <body>
        
-        <h1>Hello Git</h1>
+        <h1 id="title">Survey Form</h1>
+
+        <p id="description">This is a survey to find out more about you!</p>
+
+    
+        <form id="survey-form">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" name="name" id="name" placeholder="your name" required/>
+
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="your email" required/>
+
+            <label for="number" id="number-label">Age:</label>
+            <input type="number" min="10" max="130" name="number" id="number" placeholder="age" required/>
+
+     
+        <p id="p2">Choose the one you prefer
+        <select id="dropdown">
+            <option value="Outdoors"> You like being outside</option>
+            <option value="Indoors">You like being inside</option>
+            <option value="Outdoors-Indoors">You like being both indoors and outdoors</option>
+        </select> 
+        </p>
+
+        <input type="radio" id="male" name="gender" value="male" checked> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+        <br>
+        <br>
+
+        <label id="transportation">Choose your transportation</label>
+        <input id="checkbox" type="checkbox" name="vehicle" value="Bike">bikes
+        <input id="checkbox" type="checkbox" name="vehicle" value="Car" checked>cars
+        <input id="checkbox" type="checkbox" name="vehicle" value="Bike">motorcycles
+        <input id="checkbox" type="checkbox" name="vehicle" value="Bike">planes
+        <br>
+        <br>
+        
+        <label id="textarea">Leave your comments</label>
+        <textarea></textarea><br>
+
+        <input id="submit" type="submit" name="submit" value="Submit">
+        </form>
+        
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" async defer></script>
     </body>
 </html>
